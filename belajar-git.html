@@ -21,7 +21,7 @@
     <br />
     git log (untuk melihat history)
     <br />
-    git reset --hard kodefile.js (untuk kembali ke commit tujuan)
+    git reset --hard kodefile (untuk kembali ke commit tujuan)
     <br />
     git log --oneline (untuk menampilkan history secara singkat dan sederhana)
     <br />
@@ -35,8 +35,10 @@
     git checkout feat/namaBranch (kembali ke branch jika ada yang perlu
     ditambahkan)
     <br />
-    berikutnya ini ditambah apa?
-    <br>
-    ini merupakan perubahan2
+    git revert kodefile (untuk kembali ke commit lama, tanpa mengubah/merusak
+    commit terbaru, sehingga kita bisa kembali ke file yang terbaru itu. Contoh:
+    setelah saya membuat file5, saya ingin kembali ke file3 dengan revert, maka
+    saya tetap bisa kembali lagi ke file5, atau file4, karena kedua file
+    tersebut tidak rusak, dan masih bisa diakses dan dipakai)
   </body>
 </html>
