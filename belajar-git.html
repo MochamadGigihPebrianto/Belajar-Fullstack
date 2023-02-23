@@ -8,50 +8,55 @@
   >
     Beberapa kode penting untuk GIT:
     <br />
-    <br />
     git add . (menambahkan semua file dari working area ke stage) git status
     (untuk melihat status file)
     <br />
-    <br />
     git diff (untuk melihat file mana yang barusan diubah)
-    <br />
     <br />
     git restore -S nama.js (mengembalikan file dari stage ke working area)
     <br />
-    <br />
     git restore (mengembalikan/undo perubahan pada file di working area)
-    <br />
     <br />
     git commit -m "nama file" (untuk mengubah file dari stage menjadi commit)
     <br />
-    <br />
     git log (untuk melihat history)
-    <br />
     <br />
     git reset --hard kodefile (untuk kembali ke commit tujuan)
     <br />
-    <br />
     git log --oneline (untuk menampilkan history secara singkat dan sederhana)
-    <br />
     <br />
     git checkout -b feat/namaBranch (menambahkan branch baru, di add + commit,
     tidak boleh mengubah file yang sudah ada)
     <br />
-    <br />
     git checkout master (kembali ke master)
-    <br />
     <br />
     git merge feat/namaBranch (menambahkan branch ke master)
     <br />
-    <br />
     git checkout feat/namaBranch (kembali ke branch jika ada yang perlu
     ditambahkan)
-    <br />
     <br />
     git revert kodefile (untuk kembali ke commit lama, tanpa mengubah/merusak
     commit terbaru, sehingga kita bisa kembali ke file yang terbaru itu. Contoh:
     setelah sya membuat file5, saya ingin kembali ke file3 dengan revert, maka
     saya tetap bisa kembali lagi ke file5, atau file4, karena kedua file
     tersebut tidak rusak, dan masih bisa diakses dan dipakai)
+    <br /><br />
+    Cara menghubungkan git komputer dengan github web: <br />
+    <ol>
+      <li>
+        buat file .ssh dengan cara pergi ke web github settings, ssh & github
+        keys, generate keys, copy yang ada emailnya, ubah emailnya jadi email
+        kita, paste di terminal VSC, enter2, ketik ssh-keygen, (sekarang sudah
+        terbuat folder ssh di C\user\gigih, pindahlah folder tersebut menjadi
+        satu file di D tempat projek kita), copy kode hasil enter, dan paste
+        dengan fungsi "cat (kode)", enter, copy hasilnya(), buka ssh key, buat
+        new ssh, isi nama dan pastekan hasilnya() yang tadi, klik ok, buka
+        repository yang sudah dibuat di github, copy paste folder yang ada kata
+        kunci "remote add origin ....", paste di VSC dan enter, kembali lagi ke
+        github, copy git push origin main, paste di VSC (ganti main jadi
+        master), klik enter, sekarang proyek kita di komputer sudah terhubung
+        dengan github
+      </li>
+    </ol>
   </body>
 </html>
