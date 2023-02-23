@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.writeln("Halo");
+      /**
+       *! direvisi
+       *? bener gak?
+       *TODO oke kan
+       **nice bro!
+       **/
+      // ! revisi
+      document.writeln("<br>");
+      document.writeln("Halo" + "Bro" + "<br>");
+
+      const nilaiUjian = 90;
+      const nilaiPresensi = 70;
+
+      const lulusUjian = nilaiUjian > 80;
+      const lulusPresensi = nilaiPresensi > 80;
+
+      lulus = lulusPresensi || lulusUjian;
+      document.writeln(lulus);
+      document.writeln("<br>");
+
+      document.writeln("COBA");
+
+      let hasil = 5 === "5";
+      document.writeln(hasil);
+      document.writeln("<br>");
+
+      let x = 3;
+      let y = 6;
+      let result = (x += y);
+      document.writeln(result);
+      document.writeln("<br>");
+      document.writeln(result++);
+      document.writeln(++result);
+      document.writeln("<br>");
+
+      console.debug("Mencoba");
+      console.info("Mencoba");
+      console.warn("Mencoba");
+      console.error("Mencoba");
+      document.writeln("<br>");
+
+      let dusun = "Sumbersari";
+      let template = `Nama : ${dusun}`;
+      document.writeln(template);
+      document.writeln("<br>");
+
+      let desa = "Bening";
+      let template2 = `Nama : ${desa}`;
+      document.writeln(template2);
+      document.writeln("<br>");
+
+      let a = parseInt("2");
+      let b = 3;
+      let hasil2 = a + b;
+      document.writeln(hasil2);
+      document.writeln("<br>");
+
+      //coba lagi
+      let a1 = parseInt("10");
+      let a2 = 3;
+      let hasil4 = a1 + a2;
+      document.writeln(hasil4);
+      document.writeln("<br>");
+      document.writeln("<br>");
+
+      document.writeln(`${parseInt("8.7")}`);
+      document.writeln("<br>");
+      document.writeln(`${parseFloat("4.3")}`);
+      document.writeln("<br>");
+
+      let konversiB = b.toString();
+      document.writeln(konversiB + 3);
+      document.writeln("<br>");
+
+      let konversiC = parseInt(konversiB);
+      document.writeln(konversiC);
+      document.writeln("<br>");
+      document.writeln(konversiC + 8);
+      document.writeln("<br>");
+      document.writeln("<br>");
+
+      let a3 = 7;
+      let a4 = 7;
+      let konversiD = a3.toString();
+      document.writeln(`${konversiD + a4}`);
+
+      /**
+       *!Array dan Object serupa tapi tak sama!
+       *?Apa bedanya array dan object pada Javascript?
+       *TODO cari tahu perbedaannya
+       **Berikut ini belajar membuat array pada Javascript.
+       **/
+
+      let ikanPredator = ["gabus", "toman", "arapaima", "piranha"];
+      console.log(ikanPredator);
+      ikanPredator[0] = "hiu";
+      console.log(ikanPredator);
+      ikanPredator.push("Dorang");
+      console.log(ikanPredator);
+      ikanPredator.pop();
+      console.log(ikanPredator);
+      ikanPredator.unshift("gatul");
+      console.log(ikanPredator);
+      const indexBerapa = ikanPredator.indexOf("hiu");
+      console.log(indexBerapa);
+      ikanPredator.shift();
+      console.log(ikanPredator);
+      ikanPredator.pop();
+      console.log(ikanPredator);
+
+      /**
+       *!Array dan Object serupa tapi tak sama!
+       *?Apa bedanya array dan object pada Javascript?
+       *TODO cari tahu perbedaannya
+       **Berikut ini belajar membuat object pada Javascript.
+       **/
+
+      let ikanHias = {
+        ikan1: "Koi", //penamaan atribut/parameter di dalam object harus berbeda-beda. Misalnya: ikan1, ikan2, dst.
+        ikan2: "Emas",
+        ikan3: "Balon",
+        ikan4: "Guppy",
+        ikan5: "Gatul sawah",
+      };
+      console.log(ikanHias);
+      console.log(ikanHias.ikan1);
+      console.log(ikanHias.ikan5);
+      document.writeln("<br>");
+
+      const identitas = {
+        nama: "Mochamad Gigih Pebrianto",
+        Keahlian: "Web Developer",
+        Usia: 26,
+      };
+      console.log(identitas);
+      console.table(identitas);
+
+      const dataSiswa = {
+        Nama: "Allita Marsya",
+        Keahlian: "Administrasi, Pendidikan IPA",
+        Usia: 23,
+      };
+      console.table(dataSiswa);
+      delete dataSiswa["Usia"];
+      console.table(dataSiswa);
+      document.writeln("<br>");
+      /**
+            let halamanLogin = confirm("Apakah kamu mau melanjutkan?");
+            if (halamanLogin) {
+              let nama = prompt("Masukkan nama kamu!");
+              alert(`Selamat datang ${nama}`);
+            } else {
+              alert ("Sampai jumpa!");
+            } **/
+      document.writeln("<br>");
+
+      const nilai = "E";
+      switch (nilai) {
+        case "A":
+          document.writeln("Kamu hebat!");
+          break;
+        case "B":
+          document.writeln("Wow!");
+          break;
+        case "C":
+          document.writeln("Semangat lagi!");
+          break;
+        case "D":
+          document.writeln("Ayo belajar lagi!");
+        default:
+          document.writeln("masukkan nilai dengan benar");
+      }
+      document.writeln("<br><br>");
+
+      let dataObject = { ujaran: "ho oh" };
+      let dataArray = ["Aku", "Ganteng"];
+      let dataNull = null;
+      let dataUndefined = undefined;
+      let dataString = "Ujaran";
+      let dataNumber = 12345;
+      let dataUndefined2;
+      cekData1 = typeof dataObject;
+      cekData2 = typeof dataArray;
+      cekData3 = typeof dataNull;
+      cekData4 = typeof dataUndefined;
+      cekData5 = typeof dataString;
+      cekData6 = typeof dataNumber;
+      cekData7 = typeof dataUndefined2;
+      document.writeln(cekData1);
+      document.writeln("<br>");
+      document.writeln(cekData2);
+      document.writeln("<br>");
+      document.writeln(cekData3);
+      document.writeln("<br>");
+      document.writeln(cekData4);
+      document.writeln("<br>");
+      document.writeln(cekData5);
+      document.writeln("<br>");
+      document.writeln(cekData6);
+      document.writeln("<br>");
+      document.writeln(cekData7);
+
+      document.writeln("<br>");
+      const biodata = {
+        namaDepan: "Mochamad",
+        namaTengah: undefined,
+        namaBelakang: "Pebrianto",
+      };
+      /**
+            if ("namaKu" in biodata) {
+              alert(`Halo, ${biodata.namaTengah}`);
+            } else {
+              alert("Halo, Bro, kami tidak kenal kamu!");
+            } **/
+      document.writeln("<br>");
+
+      let nilaiMapel = 100;
+      let hasil3 = nilaiMapel >= 80 ? "Anda lulus" : "Anda tidak lulus";
+      document.writeln(hasil3);
+      document.writeln("<br>");
+
+      let nilaiMatkul;
+      let data = nilaiMatkul ?? "Nilai default"; //kiri ke kanan, kalau kiri null maka ambil yang kanan, mencari nilai yang nullist coalition operator atau tidak.
+      document.writeln(data);
+      /**
+            let person = {};
+            alert(person?.address?.country);
+      **/
+      document.writeln("<br>");
+      let data8 = ""; //data nullist, kosongan, 0 atau -0 dianggap false sama boolean di javascript
+      if (data8) {
+        document.writeln("TRUE");
+      } else {
+        document.writeln("FALSE");
+      }
+
+      document.writeln("<br>");
+      let name = {
+        depan: "",
+        tengah: "Sentono",
+        belakang: "Hohoho",
+      };
+      console.info(name.depan || name.tengah || name.belakang); //kiri ke kanan, kalau kiri falsy, ambil yang kanan, mencari nilai yang truty, mirip nullist coalition operator
+      console.info("" || []);
+      console.info(null || []);
+      console.info(undefined || []);
+      console.info(undefined || null);
+      console.info(undefined || false);
+      document.writeln("<br>");
+
+      for (let variabel = 0; variabel <= 10; variabel++) {
+        document.writeln(`Tampillkan jumlah ${variabel}`);
+        document.writeln("<br>");
+      }
+      document.writeln("<br><br>");
+
+      let variabel = 1;
+      while (variabel <= 10) {
+        document.writeln(`Tampilkan jumlah ${variabel}`);
+        document.writeln("<br>");
+        variabel++;
+      }
+
+      document.writeln("<br>");
+      let variabel1 = 5;
+      do {
+        document.writeln(`tampilkan variabel ${variabel1}`);
+        document.writeln("<br>");
+        variabel1++;
+      } while (variabel1 <= 10);
+      document.writeln("<br>");
+
+      //menampilkan bilangan genap
+      for (let genap = 2; genap <= 20; genap++) {
+        if (genap % 2 === 0) {
+          document.writeln(`Bilangan ke-${genap}`);
+          document.writeln("<br>");
+        }
+      }
+
+      document.writeln("<br>");
+      //menampilkan bilangan i dengan continue
+      for (let i = 1; i <= 19; i++) {
+        if (i % 2 === 0) {
+          continue;
+        }
+        document.writeln(`Bilangan ke-${i}`);
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      //belajar for in (perulangan index atau property), for of (perulangan value)
+      let konsumsi = { makanan: "kacang", minuman: "teh hangat" };
+      for (let ulangKonsumsi in konsumsi) {
+        document.writeln(
+          `perulanganProperty ${ulangKonsumsi} : perulanganNilai ${konsumsi[ulangKonsumsi]}`
+        );
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+      let konsumsi2 = ["jus", "kacang", "ketela"];
+      for (let ulangKonsumsi2 in konsumsi2) {
+        document.writeln(
+          `perulanganIndex ${ulangKonsumsi2} : perulanganNilai ${konsumsi2[ulangKonsumsi2]}`
+        );
+        document.writeln("<br>");
+      }
+
+      document.writeln("<br>");
+      let konsumsi3 = ["marmut", "sapi", "kambing"];
+      for (let ulangKonsumsi3 of konsumsi3) {
+        document.writeln(`perulanganNilai ${ulangKonsumsi3}`);
+        document.writeln("<br>");
+      }
+      document.writeln("<br>");
+
+      function sayHello(namaDepan, namaBelakang) {
+        let say = `Halo ${namaDepan} ${namaBelakang}`;
+        return say;
+        /**
+         * *CATETAN: fungsi return untuk mengembalikan nilai
+         **/
+      }
+      let namaku = sayHello("Gigih", "Pebri");
+      document.writeln(namaku);
+
+      document.writeln("<br>");
+      function apakahadaISI(dataArray, mencariNilai) {
+        for (ambilnilaiData of dataArray) {
+          if (mencariNilai === ambilnilaiData) {
+            return "TRUE";
+          } else {
+            ("FALSE"); //kenapa tertulis undefined? Hipotesis: karena data prompt harusnya ada (sesuai masukkan), tetapi tidak ditampilkan
+          }
+        }
+      }
+
+      /**
+
+      dataArraySATU = [1, 23, 45, 67, 8, 7, 4, 234, 123];
+      let dataPrompt = prompt("Masukkan angka yang kamu cari");
+      let konversidataPrompt = parseInt(dataPrompt);
+      hasil5 = apakahadaISI(dataArraySATU, konversidataPrompt);
+      document.writeln(hasil5);
+      document.writeln("<br>");
+      document.writeln("<br>");
+
+      function penjumlahan(nilaiA, nilaiB = 5) {
+        //default parameter
+        let total = 0;
+        total = nilaiA + nilaiB;
+        return total;
+      }
+      let X = 3;
+      let hasil6 = penjumlahan(X);
+      document.writeln(hasil6);
+      document.writeln("<br>");
+
+      **/
+
+      function sum(nama, ...dataArr) {
+        //rest parameter (terletak di akhir, data otomatis diubah jadi array)
+        let total = 0;
+        for (let ambilnilaiData2 of dataArr) {
+          total += ambilnilaiData2;
+        }
+        document.writeln(`Total nilai adalah ${total}`);
+      }
+
+      let hasil7 = sum("Jumlah", 2, 3, 6);
+      document.writeln(hasil7);
+      document.writeln("<br>");
+      //Bagaimana jika sudah punya array, lalu diletakkan di rest parameter? Berikut caranya, pakai spread syntax
+      document.writeln("<br>");
+      let jumlahSiswa = [1, 1, 1, 1, 1, 1, 1, 1];
+      let hasil8 = sum("Jumlah siswa", ...jumlahSiswa);
+      document.writeln(hasil8);
+      document.writeln("<br><br>");
+
+      function panggil(nama) {
+        document.writeln(`Halo ${nama}`);
+      }
+      let say2 = panggil; //function sebagai value di variabel
+      say2("Kodok");
+      document.writeln("<br>");
+
+      let say3 = function (nama) {
+        //fungsi tanpa nama (langsung parameter) atau disebut anonymous function
+        document.writeln(`Namamu adalah ${nama}`);
+      };
+      say3("Hoho"); //memanggil fungsi say3
+      document.writeln("<br>");
+
+      function panggilUlang(fungsisebagaiParameter) {
+        fungsisebagaiParameter("ooooo");
+      }
+      panggilUlang(say3); //fungsi sebagai parameter
+      //berikut contoh lebih manual: fungsi sebagai parameter
+      document.writeln("<br>");
+
+      panggilUlang(function (nama) {
+        document.writeln(`Hi ${nama}`);
+      }); //bentuk lain, fungsi sebagai parameter
+
+      /**
+       **anonymous function bisa ditaruh di variabel (line 391) atau ditaruh di dalam function sebagai      parameter (line 405, 413)
+       **/
+
+      panggilUlang(function (nama) {
+        document.writeln(`OIoi ${nama}`);
+      }); //bentuk lain, fungsi sebagai parameter
+      document.writeln("<br><br>");
+
+      function outer() {
+        function inner() {
+          console.info("inner");
+        }
+        inner();
+      }
+      outer();
+
+      function firstVariable() {
+        let tes = "TES";
+        function secondVariable() {
+          console.info(tes);
+          let tes2 = "Tes 2";
+        }
+        firstVariable();
+        console.info(tes2);
+      }
+
+      function faktorial(nilaiX) {
+        //faktorial dengan cara sederhana/perulangan
+        hasil1 = 1;
+        for (i = 1; i <= nilaiX; i++) {
+          hasil1 *= i;
+        }
+        return hasil1;
+      }
+      console.info(faktorial(5));
+      document.writeln(faktorial(5));
+      document.writeln("<br>");
+      function faktorialRekursif(nilaiY) {
+        if (nilaiY === 1) {
+          return 1;
+        } else {
+          return nilaiY * faktorialRekursif(nilaiY - 1);
+        }
+      }
+      console.info(faktorialRekursif(5));
+      /**
+       * PENJELASAN REKURSIF DI ATAS
+       * * 5 x faktorialRekursif (5-1)
+       * * 5 x 4 x faktorialRekursif (4-1)
+       * * 5 x 4 x 3 x faktorialRekursif (3-1)
+       * * 5 x 4 x 3 x 2 x faktorialRekursif (2-1)
+       * * 5 x 4 x 3 x 2 x 1
+       * **/
+
+      function* buatNama() {
+        //function generator adalah iterasi, kita bisa ambil nilai di dalamnya, tetapi ini bukan array, sehingga tidak bisa ambil nilai dari index. Nilai bisa diambil dengan for dan console.info
+        yield "Mochamad";
+        yield "Gigih";
+        yield "Pebrianto";
+      }
+      let ah = buatNama();
+      for (ambilnilaiFunctionGenerator of ah) {
+        console.info(ambilnilaiFunctionGenerator);
+      }
+
+      function* buatData() {
+        yield "Allita";
+        yield "Marsya";
+      }
+      let af = buatData();
+      for (ambilnilaidataFunctionGenerator of af) {
+        console.info(ambilnilaidataFunctionGenerator);
+      }
+
+      //Berikut ini penerapan Function Generator yang lebih kompleks
+      function* buatGenap(nilaiR) {
+        for (q = 1; q <= nilaiR; q++) {
+          if (q % 2 === 0) {
+            yield q;
+          }
+        }
+      }
+
+      let variabelBuatGenap = buatGenap(20);
+      for (ambilnilaiBuatGenap of variabelBuatGenap) {
+        console.info(ambilnilaiBuatGenap);
+      }
+
+      function* buatGanjil(nilaiT) {
+        for (r = 1; r <= nilaiT; r++) {
+          if (r % 2 === 1) {
+            yield r;
+          }
+        }
+      }
+      let variabelBuatGanjil = buatGanjil(20);
+      for (ambilnilaiBuatGanjil of variabelBuatGanjil) {
+        console.info(ambilnilaiBuatGanjil);
+      }
+
+      //Berikut ini belajar closure (fungsi di dalam fungsi, dan memanggil variabel global scope dari inner)
+
+      function penjumlahan(nilaiE) {
+        let ed = "Gigih";
+        function jumlah(nilaiF) {
+          console.info(ed);
+          return nilaiE + nilaiF;
+        }
+        return jumlah;
+      }
+      let vari = penjumlahan(4);
+      console.info(vari(10));
+      console.info(vari(20));
+
+      function tambah(varX) {
+        let namaku = "GOGOH";
+        function tambahLagi(varY) {
+          console.info(namaku);
+          return varX + varY;
+        }
+        return tambahLagi;
+      }
+      const hasilTambah = tambah(100);
+      console.info(hasilTambah(100));
+
+      //Belajar arrow function (bentuk function yang sederhana)
+      let varK = (masukanNama) => {
+        document.writeln(`Hi ${masukanNama}`);
+      };
+      varK("Kolokolo");
+      document.writeln("<br>");
+
+      let varG = (masukanNama, ...masukanNilai) => {
+        //arrow function + rest parameter
+        let HK = 0;
+        for (ambilmasukanNilai of masukanNilai) {
+          HK += ambilmasukanNilai;
+        }
+        document.writeln(HK);
+      };
+
+      varG("Gigih", 60, 30);
+      document.writeln("<br>");
+      let varY = (...masukanAngka) => {
+        let JO = 0;
+        for (ambilnilaimasukanAngka of masukanAngka) {
+          JO += ambilnilaimasukanAngka;
+        }
+        document.writeln(JO);
+      };
+      varY(23, 45, 56, 67, 78, 56, 45, 34, 2, 12, 34, 56, 67);
+      document.writeln("<br>");
+
+      const JOK = {
+        //belajar object method
+        ucapanSelamat: function (ucapan) {
+          alert(`Alo ${ucapan}`);
+        },
+      };
+      JOK.ucapanSelamat("HAOHAO");
+
+      let ucapkanHalo = {
+        nama: "Joko",
+        ucapan: function (kata) {
+          console.info(`Hi ${kata} aku adalah ${this.nama}`);
+        },
+      };
+      ucapkanHalo.ucapan("Bowo");
+
+      let kartuUcapan = {
+        nama: "Al",
+        ucapkan: function (kata) {
+          console.info(`Hi ${kata} My name is ${this.nama}`); //this adalah referensi. Di dalam if nested, this termasuk local scope, berguna untuk mengakses global scope function parent-nya
+        },
+      };
+      kartuUcapan.ucapkan("Totok");
+
+      function JOJO(nilai3) {
+        console.info(this); //this untuk mengetahui referensi berada di mana kita, global atau local
+      }
+      JOJO();
+
+      let KOKO = {
+        YOYO: function (ni) {
+          console.info(this); //di sini this menunjukkan sedang berada di dalam KOKO
+        },
+      };
+      KOKO.YOYO();
+
+      //Arrow function pada object method
+      //Tidak bisa menggunakan this pada arrow function
+      let kelas = {
+        namaKelas: "11 IPA",
+        ujianKelulusan: (ujian) => {
+          console.info(this);
+        },
+      };
+      kelas.ujianKelulusan("11 IPS");
+
+      //Belajar Getter (mendapatkan data) and Setter (mengubah data)
+      const person = {
+        firstName: "Joko",
+        lastName: "Widodo",
+        get fullName() {
+          return `${this.firstName} ${this.lastName}`;
+        },
+        set fullName(value) {
+          const array = value.split(" ", 2);
+          this.firstName = array[0];
+          this.lastName = array[1];
+        },
+      };
+      person.fullName = "Sari Roti";
+      console.table(person);
+
+      const benua = {
+        negaraMaju: "Indonesia",
+        negaraMaju2: "Malaysia",
+        get asian() {
+          return `${this.negaraMaju} ${this.negaraMaju2}`;
+        },
+        set asian(nil) {
+          const array = nil.split(" ");
+          this.negaraMaju = array[0];
+          this.negaraMaju2 = array[1];
+        },
+      };
+      benua.asian = "Amerika Utara";
+      console.table(benua);
+
+      //Belajar destructuring (dapat dilakukan di array dan object)
+      //Destructuring untuk mengambil beberapa value pada index atau property secara lebih cepat
+      {
+        //membuat blockscope baru, artinya ini local scope baru
+        let daftarSiswa = ["Ardi", "Arya", "Alya", "Aya", "Agas", "Adi"];
+        let [firstname, middlename, ...others] = daftarSiswa;
+        console.info(firstname);
+        console.info(middlename);
+        console.info(others);
+      }
+
+      {
+        let namaAnak = {
+          anak1: "Bowo",
+          anak2: "Carla",
+          anak3: { nama: "Dedoy", usia: "13 tahun", tinggi: "120 cm" },
+          anak4: "Eeng",
+        };
+
+        let {
+          //ini namanya destructuring, mengambil beberapa nilai index atau property tanpa harus mengetik satu per satu
+          anak1,
+          anak2,
+          anak3: { nama, usia, tinggi },
+        } = namaAnak;
+        console.info(anak1);
+        console.info(anak2);
+        console.info(usia);
+        console.info(tinggi);
+      }
+
+      {
+        //Destructuring value (index atau property) pada object dan array sebagai parameter sebuah fungsi
+
+        let namaBuah = ["Jambu", "Asam", "Rambutan", "Apel", "Stroberi"];
+        //Spasi
+        function sebutkanBuah([buah1, buah2, buah3, ...other]) {
+          console.info(buah1);
+          console.info(buah2);
+        }
+        sebutkanBuah(namaBuah);
+      }
+
+      {
+        let namaSiswa = {
+          siswa1: "Arista",
+          siswa2: "Dewi",
+          siswa3: "Arum",
+          siswa4: "Joni",
+        };
+
+        function panggilSiswa({ siswa1, siswa2, ...others }) {
+          console.table(siswa1);
+          console.table(siswa2);
+        }
+        panggilSiswa(namaSiswa);
+      }
+
+      {
+        ("use strict"); //menggunakan mode strict, lebih aman, dan terjamin, tetapi sangat ketat. Warning akan dibaca eror
+        let nilai = [1, 2, 3, 4, 6, 7, 8, 10];
+        function hitungNilai([index0, index1, index2, ...others]) {
+          return index0 + index1 + index2;
+        }
+        document.writeln(hitungNilai(nilai));
+      }
+      document.writeln("<br>");
+
+      {
+        function penjumlahan(...nilaiArray) {
+          debugger; //Belajar debugger, cara mencari bug (masalah), akan meneliti satu per satu hasil dari perhitungan dengan breakpoint dan debugger
+          let total = 0;
+          for (let nilai of nilaiArray) {
+            total += nilai;
+          }
+          return total;
+        }
+        const hasil = penjumlahan(1, 1, 1, 1);
+        console.info(hasil);
+      }
+    </script>
+  </body>
+</html>
