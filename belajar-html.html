@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      img {
+        width: 100px;
+        height: 75px;
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -12,6 +18,67 @@
       <!-- bertumpuk secara vertikal (space mengambil seluruh blok ke kanan penuh) -->
       span <span>bersifat inline element </span>
       <!-- bergeser ke kanan (space pas di konten saja) -->
+      <br />
+      <ol>
+        <li>first item</li>
+        <li>
+          second item
+          <ul>
+            <li>second item first subitem</li>
+            <li>
+              second item second subitem
+              <ol>
+                <li>second item second subitem first sub-item</li>
+                <li>second item second subitem first sub-item</li>
+                <li>second item second subitem first sub-item</li>
+              </ol>
+            </li>
+            <li>second item third subitem</li>
+          </ul>
+        </li>
+        <li>third item</li>
+      </ol>
+      <hr />
+      Aku sudah belajar git <a href="belajar-git.html"><sup>[1]</sup></a>
+      <hr />
+      Belajar entity code<sup>&copy;</sup>
+      <hr />
+      <h3>Belajar Semantic Syntax</h3>
+      <main>
+        <section>
+          <h4>Bagian Section</h4>
+          <article>
+            <h5>Judul Article</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quisquam nobis doloremque velit, blanditiis beatae
+              temporibus sed eaque dolores aliquid esse cum? Repellendus quos
+              pariatur nostrum voluptatem itaque ut eaque.
+            </p>
+          </article>
+          <!-- Article dan section sebetulnya bisa saling menggantikan, hanya saja disarankan article cenderung ke teks saja, sementara section berisi konten yang lebih bervariasi -->
+          <!-- Pembungkus Bersifat Inline Elements -->
+
+          <table>
+            <!-- menggunakan table dengan element tr dan td supaya konten bisa "menyamping" -->
+            <tr>
+              <td>
+                <h4>Gambar Minion Bob</h4>
+              </td>
+              <td>
+                <img
+                  src="https://www.ruparupa.com/blog/wp-content/uploads/2022/07/karakter-minions-bob.jpeg"
+                  alt="gambar karakter-minions-bob"
+                />
+              </td>
+            </tr>
+          </table>
+        </section>
+        <!-- di dalam section ada gambar, judul, teks. Isinya lebih bervariasi daripada article -->
+        <footer>copyright<sup>&copy;</sup></footer>
+        <!-- bagian bawah setelah section -->
+      </main>
+      <!-- pembungkus utama -->
     </div>
   </body>
 </html>
