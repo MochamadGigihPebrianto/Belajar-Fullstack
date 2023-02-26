@@ -150,13 +150,100 @@
       <hr />
       <h4>Belajar Form</h4>
       <!-- <form action="ke mana data dikirim" method="get atau post"></form>  -->
-      <form action="#" method="post">
-        <input type="text" placeholder="tipe teks" />
-        <input type="password" placeholder="tipe password" />
-        <input type="email" placeholder="tipe email" />
-        <input type="date" />
+      <form action="/tempat-tujuan-form-dikirim" method="post">
+        <!-- method get akan tampil di bagian link. Disarankan pakai post kalau ada password -->
+        <table border="1">
+          <thead>
+            <tr>
+              <th colspan="2">Pengisian Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- for pada label disesuaikan dengan id pada input -->
+              <td style="text-align: left">
+                <p><label for="nama">Email</label></p>
+              </td>
+              <td>
+                <p>
+                  <input
+                    type="email"
+                    placeholder="ketik email"
+                    id="nama"
+                    name="nama"
+                  />
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <p><label for="password">Password</label></p>
+              </td>
+              <td>
+                <p>
+                  <input
+                    type="password"
+                    placeholder="ketik password"
+                    id="password"
+                    name="password"
+                  />
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr />
+        <button type="submit">Kirim</button>
       </form>
       <hr />
+      <h4>Belajar Radio/Select/Check Button</h4>
+
+      <form action="/ke-tempat-tujuan">
+        <table border="1">
+          <thead>
+            <tr style="text-align: center">
+              <th><label for="baju" id="baju">Baju</label></th>
+              <th><label for="ukuran">Ukuran</label></th>
+              <th><label for="cek">Check</label></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input
+                  type="radio"
+                  name="baju"
+                  id="baju"
+                  value="kemeja"
+                  checked
+                />
+                <label for="kemeja">Kemeja</label>
+                <input
+                  type="radio"
+                  name="baju"
+                  id="baju"
+                  value="kaos"
+                  checked
+                />
+                <label for="kemeja">Kaos</label>
+              </td>
+              <td>
+                <select name="ukuran" id="ukuran">
+                  <option value="S">Small</option>
+                  <option value="M">Medium</option>
+                  <option value="L">Large</option>
+                  <option value="XL">Extra Large</option>
+                  <option value="XXL">Extra Extra Large</option>
+                </select>
+              </td>
+              <td>
+                <input type="checkbox" name="cek" id="cek" checked />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit">Kirim</button>
+      </form>
     </div>
   </body>
 </html>
