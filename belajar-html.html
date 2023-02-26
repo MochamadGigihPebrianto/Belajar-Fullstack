@@ -196,7 +196,7 @@
         <button type="submit">Kirim</button>
       </form>
       <hr />
-      <h4>Belajar Radio/Select/Check Button</h4>
+      <h4>Belajar Radio/Select/Check Button/TextArea</h4>
 
       <form action="/ke-tempat-tujuan">
         <table border="1">
@@ -237,13 +237,45 @@
                 </select>
               </td>
               <td>
-                <input type="checkbox" name="cek" id="cek" checked />
+                <input
+                  type="checkbox"
+                  name="cek"
+                  id="cek"
+                  value="benar"
+                  checked
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="3">
+                <textarea
+                  name="teksArea"
+                  id="teksArea"
+                  cols="40"
+                  rows="4"
+                  placeholder="tulis catatan kamu"
+                ></textarea>
               </td>
             </tr>
           </tbody>
         </table>
-        <button type="submit">Kirim</button>
+        <button type="submit">Order</button>
       </form>
     </div>
+    <hr>
+    <form action="valid">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        minlength="2"
+        maxlength="7"
+        placeholder="isi password"
+      />
+      <button type="submit" id="password" name="password">Kirim</button>
+    </form>
   </body>
 </html>
