@@ -1,0 +1,23 @@
+.spasiSatu {
+  line-height: 15px;
+  text-align: justify;
+}
+.spasiDua {
+  line-height: 20px;
+}
+
+#warnaSatu {
+  color: rgb(42, 67, 165);
+}
+
+section h3 {
+  background-color: aquamarine;
+}
+
+section p {
+  background-color: rgb(171, 255, 227);
+}
+
+article > ul {
+  background-color: rgba(136, 136, 136, 0.493);
+}
