@@ -21,3 +21,68 @@ section p {
 article > ul {
   background-color: rgba(136, 136, 136, 0.493);
 }
+
+/* perhatikan 'input dan []' harus nempel supaya berhasil */
+
+section table tbody tr td input[type="email"] {
+  color: red;
+}
+
+section table tbody tr td span {
+  font-weight: bold;
+  font-size: larger;
+}
+
+section button:hover {
+  cursor: pointer;
+  border-color: rgb(232, 62, 90);
+}
+
+section table tbody tr td span::after {
+  content: "*";
+}
+
+section table tbody tr td span::before {
+  content: "#";
+}
+
+.border1 {
+  border: 0.1em solid;
+  padding: 2%;
+  margin: 2em;
+  border-style: dotted;
+  border-bottom-width: 0.2em;
+}
+
+#border2 {
+  border-style: dotted dashed solid double;
+  margin: 2em;
+  padding: 2%;
+}
+
+#container {
+  background-color: rgb(54, 54, 120);
+  width: 400px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.kotak1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(126, 126, 239);
+}
+
+.kotak2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(92, 92, 244);
+}
+
+.kotak3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(61, 61, 244);
+}
