@@ -62,27 +62,136 @@ section table tbody tr td span::before {
 
 #container {
   background-color: rgb(54, 54, 120);
-  width: 400px;
-  height: 150px;
+  width: 50%;
+  height: 120px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .kotak1 {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-color: rgb(126, 126, 239);
 }
 
+div:nth-child(1) {
+  align-self: flex-start;
+}
+
+div:nth-child(2) {
+  align-self: flex-start;
+  flex-basis: 100px;
+}
+
 .kotak2 {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-color: rgb(92, 92, 244);
 }
 
+div:nth-child(3) {
+  align-self: flex-end;
+}
+
 .kotak3 {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-color: rgb(61, 61, 244);
+}
+
+.kotak4 {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(27, 27, 244);
+}
+
+.kotak5 {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(4, 4, 202);
+}
+
+div:nth-child(5) {
+  align-self: flex-start;
+}
+
+.container2 {
+  background-color: rgb(63, 32, 3);
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.kotak8 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(117, 104, 32);
+  flex-grow: 2;
+}
+
+section div[class="kotak8"]:nth-child(3) {
+  align-self: flex-start;
+}
+
+.kotak9 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(90, 64, 13);
+}
+
+section div[class="kotak9"]:nth-child(2) {
+  align-self: flex-end;
+}
+
+.kotak10 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(137, 83, 49);
+  flex-shrink: 2;
+}
+
+.teksBesar {
+  font-size: 500%;
+  font-family: "poppins";
+}
+
+@media (max-width: 768px) {
+  p[class="teksBesar"] {
+    font-size: 4em;
+  }
+  nav ul {
+    flex-direction: row;
+    font-size: 4em;
+  }
+}
+@media (max-width: 397px) {
+  p[class="teksBesar"] {
+    font-size: 2em;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li a {
+    font-size: 75%;
+  }
+}
+
+nav ul {
+  font-size: 1.5em;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "poppins";
 }
