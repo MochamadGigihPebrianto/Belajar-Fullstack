@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: #167bdc;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+}
+
+.pembungkus {
+  justify-content: center;
+  border: none;
+}
+
+nav div img {
+  width: 9rem;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tombol1 {
+  background-color: rgb(255, 187, 84);
+  border: none;
+  margin: 4px 4px 4px 13px;
+  border-radius: 40px;
+  height: 40px;
+  width: 123px;
+  align-items: center;
+}
+
+.tombol1:hover {
+  background-color: rgb(230, 160, 55);
+  transition: 0.5s;
+}
+
+.tombol2 {
+  background-color: rgb(92, 184, 92);
+  border: none;
+  margin: 4px 4px 4px 13px;
+  border-radius: 40px;
+  height: 40px;
+  width: 123px;
+  align-items: center;
+}
+
+.tombol2:hover {
+  background-color: rgb(42, 160, 42);
+  transition: 0.5s;
+}
+
+nav div a {
+  color: aliceblue;
+  font-family: Verdana, sans-serif, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+  letter-spacing: 1;
+  border: none;
+  padding: 0;
+  margin: 4px 18px;
+  letter-spacing: 2px;
+}
+
+nav div a[class="tombol1"] {
+  padding: 12px 13px;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+nav div a[class="tombol2"] {
+  padding: 12px 22px;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1366px) {
+  #hamburger-menu {
+    display: none;
+  }
+  nav div div a {
+    font-size: 75%;
+  }
+  nav div div a img {
+    size: 75%;
+  }
+}
+
+@media (max-width: 1102px) {
+  #hamburger-menu {
+    display: none;
+  }
+  nav div div a.tombol2 {
+    font-size: 62.5%;
+    position: absolute;
+    right: -180px;
+  }
+  nav div div a img {
+    size: 62.5%;
+  }
+}
+
+@media (max-width: 969px) {
+  #hamburger-menu {
+    display: none;
+  }
+  nav div div a.tombol1 {
+    font-size: 62.5%;
+    position: absolute;
+    right: -180px;
+  }
+  nav div div a img {
+    size: 62.5%;
+  }
+}
+
+@media (max-width: 775px) {
+  #hamburger-menu {
+    display: none;
+  }
+  nav div div.menu a:nth-child(7) {
+    font-size: 62.5%;
+    position: absolute;
+    right: -550px;
+  }
+  nav div div a img {
+    size: 62.5%;
+  }
+}
+
+@media (max-width: 693px) {
+  #hamburger-menu {
+    display: none;
+  }
+  nav div div.menu a:nth-child(6) {
+    font-size: 62.5%;
+    position: absolute;
+    right: -550px;
+  }
+  nav div div a img {
+    size: 62.5%;
+  }
+}
+
+@media (max-width: 573px) {
+  #hamburger-menu {
+    display: none;
+  }
+  nav div div.menu a:nth-child(5) {
+    font-size: 55%;
+    position: absolute;
+    right: -550px;
+  }
+  nav div div a img {
+    size: 55%;
+  }
+}
+
+@media (max-width: 450px) {
+  #hamburger-menu {
+    display: none;
+  }
+  nav div div.menu a:nth-child(4) {
+    font-size: 55%;
+    position: absolute;
+    right: -550px;
+  }
+  nav div div a img {
+    size: 55%;
+  }
+}
+
+@media (max-width: 414px) {
+  nav div div.menu a:nth-child(3) {
+    font-size: 55%;
+    position: absolute;
+    right: -550px;
+  }
+
+  nav div div.menu a:nth-child(2) {
+    font-size: 55%;
+    position: absolute;
+    right: -550px;
+  }
+
+  nav div div a img {
+    position: absolute;
+    size: 55%;
+    left: 20px;
+    bottom: 13px;
+  }
+  #hamburger-menu {
+    display: inline-block;
+    position: absolute;
+    left: 300px;
+    bottom: 20px;
+  }
+}
